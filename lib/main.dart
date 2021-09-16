@@ -9,10 +9,10 @@ import 'package:velocity_x/velocity_x.dart';
 
 void main() {
   runApp(VxState(
-    store: MyStore(), 
+    store: MyStore(),
     child: MyApp(),
     interceptors: [],
-    ));
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
-      initialRoute: MyRoutes.homeRoute,
+      initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
